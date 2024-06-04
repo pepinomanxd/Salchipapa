@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instituto Nacional de la Salchipapa</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pexels-cottonbro-4252146.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .header {
+    background-color: #00ffea;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+  }
+  .nav-menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .nav-menu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .nav-menu a.convenio {
+    background-color: #4CAF50;
+  }
+  .main {
+    padding: 20px;
+    color: #333333;
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #45a049;
+  }
+  .fade-in {
+    animation: fadeIn 3s;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Estilos responsivos para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-menu a {
+      width: 100%;
+      text-align: center;
+    }
+    .card {
+      margin: 10px;
+    }
+    .footer {
+      position: relative;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Instituto Nacional de la Salchipapa</h1>
+  <p>Formando los mejores chefs de salchipapa desde 2024.</p>
+</div>
+
+<div class="nav-menu">
+  <a href="#inicio">Inicio</a>
+  <a href="#cursos">Cursos</a>
+  <a href="#sobre-nosotros">Sobre Nosotros</a>
+  <a href="#contacto">Contacto</a>
+  <a href="https://www.itclp.com/" class="convenio" target="_blank">Convenios</a>
+  <a href="https://contaduriapublica.umsa.bo/" class="convenio" target="_blank">Contaduría Pública</a>
+</div>
+
+<div class="main fade-in">
+  <h2>Bienvenidos al Instituto Nacional de la Salchipapa</h2>
+  <p>El lugar donde tu pasión por la cocina y la salchipapa se convierte en una carrera profesional.</p>
+  
+  <div class="card">
+    <h3>Nuestros Cursos</h3>
+    <p>Explora nuestra oferta educativa, desde el curso "Maestro de la Salchipapa" hasta especializaciones como "Salchipapa Gourmet" y "Innovación en Salchipapa". Nuestros programas están diseñados para impulsar tu creatividad y habilidades culinarias al máximo nivel.</p>
+    <button class="btn">Más Información</button>
+  </div>
+  
+  <div class="card">
+    <h3>Sobre Nosotros</h3>
+    <p>El Instituto Nacional de la Salchipapa fue fundado por el chef de renombre mundial Mario David Paucara Cartagena, nacido en La Paz y conocido por su innovadora cocina que combina técnicas tradicionales con tendencias modernas. Bajo su liderazgo, el instituto ha ganado numerosos premios internacionales.</p>
+    <button class="btn">Conoce Más</button>
+  </div>
+  
+  <div class="card">
+    <h3>Eventos</h3>
+    <p>Únete a nuestro festival anual "Fiesta de la Salchipapa", donde chefs de todo el mundo compiten para crear la salchipapa más deliciosa y original. Este evento no solo celebra la comida, sino también la cultura y la comunidad que se construye alrededor de ella.</p>
+    <button class="btn">Ver Eventos</button>
+  </div>
+  
+  <div class="card">
+    <h3>Blog de Recetas</h3>
+    <p>Descubre recetas exclusivas como "Salchipapa al Pesto" y "Salchipapa de Mariscos", creadas por nuestros chefs expertos. Nuestro blog es un tesoro de conocimientos culinarios que te inspirará a explorar nuevos horizontes gastronómicos.</p>
+    <button class="btn">Leer Blog</button>
+  </div>
+  
+  <div class="card">
+    <h3>Testimonios</h3>
+    <p>Conoce las historias de nuestros exalumnos, como Juanita Álvarez, quien ahora dirige una cadena de restaurantes de salchipapa exitosos en tres continentes. Sus testimonios son una prueba del impacto transformador de nuestra educación.</p>
+    <button class="btn">Nuestros Graduados</button>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Contactanos: <strong>pepinoman76@gmail.com</strong></p>
+</div>
+
+<script>
+// Funciones de JavaScript para interactividad
+document.addEventListener('DOMContentLoaded', function() {
+  alert('¡Bienvenidos al Instituto Nacional de la Salchipapa!');
+});
+
+var btns = document.querySelectorAll('.btn');
+btns.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    alert('¡Pronto tendremos más información sobre esta sección!');
+  });
+});
+</script>
+
+</body>
+</html>
